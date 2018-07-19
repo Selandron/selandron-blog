@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->text('bio')->nullable();
             $table->string('avatar')->default("./base.jpg");
-            $table->boolean('avatard_generated')->default(true);
+            $table->boolean('avatar_generated')->default(true);
             $table->boolean('private')->default(true);
             $table->string('password');
             $table->enum('status', ['admin', 'writer', 'moderator', 'member'])->default("member");

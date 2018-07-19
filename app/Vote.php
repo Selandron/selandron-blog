@@ -8,4 +8,6 @@ class Vote extends Model
 {
     public function author() { $this->hasOne('App\User'); }
     public function comment() { $this->hasOne('App\comment'); }
+
+    public $timestamps = false;
 }
