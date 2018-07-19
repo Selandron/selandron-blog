@@ -25,6 +25,9 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        // Check if the user have access to admin panel
+        Gate::define('adminAccess', function($user) {
+            return $user->status(['admin', 'writer', 'moderator']);
+        });
     }
 }

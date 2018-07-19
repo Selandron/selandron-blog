@@ -11,6 +11,8 @@
 |
 */
 
+require_once 'admin.php';
+
 Route::get('/', function () {
     return view('welcome');
 });

@@ -20,7 +20,10 @@ class CreateCategoriesTable extends Migration
         });
 
         \DB::table('categories')->insert([
-            ['name' => 'Blog']
+            ['name' => 'Blog'], ['name' => 'Youtube'], ['name' => 'Culture'],
+            ['name' => 'Littérature'], ['name' => 'BD & Comic'], ['name' => 'Film & Série'], 
+            ['name' => 'Jeu vidéo'], ['name' => 'Critique'], ['name' => 'Projets'],
+            ['name' => 'Autre'], 
         ]);
     }
 

@@ -31,7 +31,8 @@ class CreateUsersTable extends Migration
         DB::table('users')->insert([
             'pseudo' => 'admin',
             'email' => 'selandron@blog.com',
-            'password' => bcrypt('azerty')
+            'password' => bcrypt('azerty'),
+            'status' => 'admin',
         ]);
     }
 
