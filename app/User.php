@@ -28,7 +28,7 @@ class User extends Authenticatable
     ];
 
     public function articles() { return $this->hasMany('App\Article'); }
-    public function comments() { $this->hasMany('App\Comment'); }
+    public function comments() { return $this->hasMany('App\Comment'); }
     public function status($status) {
         $status = (array)$status;
         return in_array($this->status, $status);

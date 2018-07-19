@@ -36,7 +36,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Blog Selandron</a>
+                <a class="navbar-brand" href="{{route('home')}}">Blog Selandron</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -44,13 +44,13 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Articles <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">New +</a></li>
-                            <li><a href="#">My articles</a></li>
-                            <li><a href="#">All articles</a></li>
+                            <li><a href="{{route('new-article')}}">New +</a></li>
+                            <li><a href="{{route('my-articles')}}">My articles</a></li>
+                            <li><a href="{{route('all-articles')}}">All articles</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Users</a></li>
-                    <li><a href="#">Comments</a></li>
+                    <li><a href="{{route('all-users')}}">Users</a></li>
+                    <li><a href="{{route('all-comments')}}">Comments</a></li>
                 </ul>
             </div>
         </div>
@@ -61,7 +61,7 @@
                 <a href="#">Notifications</a>
             </div>
             <div class="col-1">
-                <a href="#">New +</a>
+                <a href="{{route('new-article')}}">New +</a>
             </div>
             <div class="col-2">
                 <a href="#">{!! auth()->user()->pseudo !!}</a>
