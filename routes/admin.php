@@ -8,7 +8,7 @@ Route::group(['middleware' => 'can:adminAccess'], function() {
 	    Route::get('articles/new', 'AdminController@newArticle')->name('new-article');
 	    Route::get('articles/my', 'AdminController@myArticles')->name('my-articles');
 
-	     Route::get('users/all', 'AdminController@allUsers')->name('all-users');
-	     Route::get('comments/all', 'AdminController@allComments')->name('all-comments');
+	    Route::get('users/all', 'AdminController@allUsers')->name('all-users');
+	    Route::get('comments/all', 'AdminController@allComments')->name('all-comments');
 	});
 });

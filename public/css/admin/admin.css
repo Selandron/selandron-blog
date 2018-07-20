@@ -1,0 +1,37 @@
+body {
+	font-family: 'PT Sans', sans-serif;
+	background-color: #f2f2f2;
+}
+
+nav {
+	text-align: center;
+	font-size: 18px;
+	width: 175px;
+}
+
+/* MAIN */
+#content-dashboard {
+	padding: 15px;
+}
+#content-dashboard > .row {
+	height: 100%;
+}
+
+/* TOP BAR */
+#top-bar {
+	border-bottom: solid 2px lightgrey;
+	box-shadow: 0px 5px 5px lightgrey; 
+	padding: 10px;
+	background-color: white;
+}
+#top-bar > div {
+	display: inline-block;
+}
+#top-bar > .col-2 {
+	float: right;
+}
+#top-bar:after {
+	content: "";
+    clear: both;
+    display: table;
+}

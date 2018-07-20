@@ -1,0 +1,27 @@
+h1 {
+	color: #3266ba;
+}
+
+table {
+	margin: auto;
+}
+
+table, th, td {
+   border: 1px solid black;
+   background-color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.row-head th {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 16px;
+}
+
+.pagination{
+	text-align: center;
+}

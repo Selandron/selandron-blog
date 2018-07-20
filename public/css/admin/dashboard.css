@@ -1,0 +1,118 @@
+/* CARD BOX */
+.cardbox {
+	padding: 15px;
+	padding-bottom: 0px;
+}
+.cardbox > div {
+	background-color: white;
+	box-shadow: 3px 3px 5px lightgrey;
+	border-radius: 7px;
+	border: solid 2px grey;
+	padding: 10px;
+	max-width: 
+}
+.cardbox > div:hover {
+	box-shadow: 3px 3px 5px grey;
+}
+.cardbox > div > h1 {
+	font-size: 20px;
+	font-weight: bolder;
+	margin-top: 10px;
+	color: #3266ba;
+}
+.row-head {
+	width: 100%;
+}
+.row-head:after {
+	content: "";
+    display: table;
+    clear: both;
+}
+.column-head {
+	float: left;
+	width: 33.33%;
+}
+.column-head > h2 {
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+
+
+/* BOX ARTCILES */
+#list-article {
+	width: 100%;
+}
+#list-article > hr {
+
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.row-article {
+	width: 100%;
+}
+.row-article:after {
+	content: "";
+    display: table;
+    clear: both;
+}
+.row-article:hover {
+	background-color: #EAEAEA;
+	border-radius: 5px;
+}
+.column-article {
+	float: left;
+	width: 33.33%;
+}
+.column-article > a {
+	color: black;
+}
+.column-article > a > p {
+	text-align: center;
+	margin-bottom: 0px;
+}
+.column-article > p {
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+
+/* BOX COMMENT */
+#list-comment {
+	width: 100%;
+}
+#list-comment > hr {
+
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.row-comment {
+	width: 100%;
+}
+.row-comment:after {
+	content: "";
+    display: table;
+    clear: both;
+}
+.row-comment:hover {
+	background-color: #EAEAEA;
+	border-radius: 5px;
+}
+.column-comment {
+	float: left;
+	width: 33.33%;
+}
+.column-comment > a {
+	color: black;
+}
+.column-comment > a > p {
+	text-align: center;
+	margin-bottom: 0px;
+}
+.column-comment > p {
+	margin-bottom: 0px;
+	text-align: center;
+}

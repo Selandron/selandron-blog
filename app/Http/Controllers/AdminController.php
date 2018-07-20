@@ -11,4 +11,9 @@ class AdminController extends Controller
     	$comments = CommentController::getLastComments();
     	return view('admin.dashboard')->with(['lastArticles' => $articles, 'lastComments' => $comments]);
     }
+
+    public function allArticles() {
+    	$articles = ArticleController::getAllArticles();
+    	return view('admin.list-articles')->with(['articles' => $articles]);
+    }
 }
